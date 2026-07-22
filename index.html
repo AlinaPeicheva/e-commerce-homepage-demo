@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bug Club — Hand-Embroidered Tote Bags</title>
+<meta name="description" content="Bug Club makes hand-embroidered canvas totes for people who stop to look at bugs. Heavyweight cotton, six-legged mascots, small batches only.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23F8F3E9'/%3E%3Cellipse cx='32' cy='36' rx='13' ry='16' fill='%23EF5B41'/%3E%3Cline x1='32' y1='22' x2='32' y2='52' stroke='%231D2B4F' stroke-width='2.5'/%3E%3Ccircle cx='26' cy='30' r='2.4' fill='%231D2B4F'/%3E%3Ccircle cx='38' cy='30' r='2.4' fill='%231D2B4F'/%3E%3Ccircle cx='24' cy='42' r='2.4' fill='%231D2B4F'/%3E%3Ccircle cx='40' cy='42' r='2.4' fill='%231D2B4F'/%3E%3Ccircle cx='32' cy='20' r='4' fill='%231D2B4F'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body>
+
+<!-- Icon sprite -->
+<svg class="sprite" aria-hidden="true">
+  <symbol id="icon-dragonfly" viewBox="0 0 64 64">
+    <line x1="32" y1="14" x2="32" y2="52" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="32" cy="12" r="4.5" fill="currentColor"/>
+    <path d="M32 22 C 18 10, 6 14, 4 24 C 14 26, 26 24, 32 22Z" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M32 22 C 46 10, 58 14, 60 24 C 50 26, 38 24, 32 22Z" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M32 30 C 20 20, 10 24, 9 32 C 18 33, 27 31, 32 30Z" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M32 30 C 44 20, 54 24, 55 32 C 46 33, 37 31, 32 30Z" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <symbol id="icon-ladybug" viewBox="0 0 64 64">
+    <ellipse cx="32" cy="36" rx="13" ry="16" fill="currentColor"/>
+    <line x1="32" y1="22" x2="32" y2="52" stroke="var(--cream)" stroke-width="2"/>
+    <circle cx="26" cy="30" r="2.2" fill="var(--cream)"/>
+    <circle cx="38" cy="30" r="2.2" fill="var(--cream)"/>
+    <circle cx="24" cy="42" r="2.2" fill="var(--cream)"/>
+    <circle cx="40" cy="42" r="2.2" fill="var(--cream)"/>
+    <circle cx="32" cy="20" r="4.5" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-caterpillar" viewBox="0 0 64 64">
+    <path d="M6 40 Q10 30 18 40 Q26 50 34 40 Q42 30 50 40 Q54 44 58 38" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="58" cy="34" r="4" fill="currentColor"/>
+    <line x1="60" y1="28" x2="63" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="icon-moth" viewBox="0 0 64 64">
+    <line x1="32" y1="16" x2="32" y2="50" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    <path d="M32 22 C 16 8, 4 16, 6 30 C 18 34, 28 28, 32 22Z" fill="currentColor" opacity="0.85"/>
+    <path d="M32 22 C 48 8, 60 16, 58 30 C 46 34, 36 28, 32 22Z" fill="currentColor" opacity="0.85"/>
+    <path d="M32 8 C 28 4, 24 4, 22 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <path d="M32 8 C 36 4, 40 4, 42 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>HAND-EMBROIDERED IN SMALL BATCHES</span>
+    <span class="dot">·</span>
+    <span>HEAVYWEIGHT ORGANIC CANVAS</span>
+    <span class="dot">·</span>
+    <span>FREE SHIPPING OVER $75</span>
+    <span class="dot">·</span>
+    <span>NEW SPECIMENS MONTHLY</span>
+    <span class="dot">·</span>
+    <span>HAND-EMBROIDERED IN SMALL BATCHES</span>
+    <span class="dot">·</span>
+    <span>HEAVYWEIGHT ORGANIC CANVAS</span>
+    <span class="dot">·</span>
+    <span>FREE SHIPPING OVER $75</span>
+    <span class="dot">·</span>
+    <span>NEW SPECIMENS MONTHLY</span>
+    <span class="dot">·</span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site-header" id="top">
+  <a href="#top" class="wordmark">
+    <svg width="30" height="30" viewBox="0 0 64 64" class="wordmark__icon"><use href="#icon-dragonfly"/></svg>
+    <span>bug<em>club</em></span>
+  </a>
+
+  <nav class="site-nav" id="site-nav">
+    <a href="#collection">Shop</a>
+    <a href="#field-guide">Field Guide</a>
+    <a href="#details">Journal</a>
+    <a href="#join">About</a>
+  </nav>
+
+  <div class="header-actions">
+    <button class="icon-btn" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="#collection" class="icon-btn cart-btn" aria-label="Cart">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+      <span class="cart-count">0</span>
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__copy">
+      <p class="eyebrow">EST. FOR THE QUIETLY CURIOUS</p>
+      <h1 class="hero__headline">
+        Carry a little<br>
+        <em>wild</em> with you.
+      </h1>
+      <p class="hero__lede">
+        Hand-embroidered canvas totes for people who stop to look at bugs.
+        Heavyweight cotton, six-legged mascots, zero mass production.
+      </p>
+      <div class="hero__actions">
+        <a href="#collection" class="btn btn--primary">Explore the collection</a>
+        <a href="#field-guide" class="btn btn--text">Meet the club <span>→</span></a>
+      </div>
+    </div>
+
+    <div class="hero__image-wrap">
+      <img src="images/hero-lifestyle.jpg" alt="A woman walking outdoors carrying an oversized natural canvas tote bag with sky-blue straps and an embroidered ladybug patch" class="hero__image">
+      <div class="specimen-tag specimen-tag--hero">
+        <span>No. 01</span>
+        <strong>The Ladybug Tote</strong>
+      </div>
+      <svg class="floating-bug floating-bug--1" width="34" height="34" viewBox="0 0 64 64"><use href="#icon-dragonfly"/></svg>
+      <svg class="floating-bug floating-bug--2" width="26" height="26" viewBox="0 0 64 64"><use href="#icon-ladybug"/></svg>
+    </div>
+    <svg class="hero__cursor-bug" width="22" height="22" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-dragonfly"/></svg>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="philosophy" data-reveal>
+    <div class="philosophy__quote">
+      <p class="eyebrow">01 — OUR PHILOSOPHY</p>
+      <p class="pull-quote">
+        We think a tote should have a personality.
+        Ours happen to have <em>six legs</em>.
+      </p>
+    </div>
+    <div class="philosophy__body">
+      <p>
+        Bug Club started with a doodled ladybug on the back of a napkin and a
+        stubborn belief that carry-alls don't have to be boring. Every bag is
+        cut from heavyweight cotton canvas, stitched by hand in small batches,
+        and finished with an embroidered specimen of your choosing.
+      </p>
+      <ul class="field-notes">
+        <li><span>01</span>Heavyweight 16oz cotton canvas</li>
+        <li><span>02</span>Hand-embroidered, one bug at a time</li>
+        <li><span>03</span>Finished and inspected by hand</li>
+        <li><span>04</span>Small batches — no two dye lots alike</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Collection -->
+  <section class="collection" id="collection">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow">02 — THE COLLECTION</p>
+      <h2>Pick your specimen.</h2>
+    </div>
+
+    <div class="specimens">
+
+      <article class="specimen specimen--a" data-reveal>
+        <div class="specimen__frame">
+          <img src="images/tote-ladybug.jpg" alt="Cream canvas tote bag with coral trim and an embroidered ladybug patch">
+          <button class="add-btn">Add to bag</button>
+        </div>
+        <div class="specimen__label">
+          <span class="specimen__num">No. 01</span>
+          <h3>The Ladybug Tote</h3>
+          <p class="latin">Coccinella septempunctata</p>
+          <p class="price">$68</p>
+        </div>
+      </article>
+
+      <article class="specimen specimen--b" data-reveal>
+        <div class="specimen__frame">
+          <img src="images/tote-dragonfly.jpg" alt="Sky blue canvas tote bag with cream straps and an embroidered dragonfly">
+          <button class="add-btn">Add to bag</button>
+        </div>
+        <div class="specimen__label">
+          <span class="specimen__num">No. 02</span>
+          <h3>The Dragonfly Tote</h3>
+          <p class="latin">Anisoptera vulgaris</p>
+          <p class="price">$72</p>
+        </div>
+      </article>
+
+      <article class="specimen specimen--a" data-reveal>
+        <div class="specimen__frame">
+          <img src="images/tote-firefly.jpg" alt="Butter yellow canvas tote bag with navy trim and an embroidered firefly motif">
+          <button class="add-btn">Add to bag</button>
+        </div>
+        <div class="specimen__label">
+          <span class="specimen__num">No. 03</span>
+          <h3>The Firefly Tote</h3>
+          <p class="latin">Lampyridae nocturna</p>
+          <p class="price">$72</p>
+        </div>
+      </article>
+
+      <article class="specimen specimen--b" data-reveal>
+        <div class="specimen__frame">
+          <img src="images/tote-caterpillar.jpg" alt="Sage green canvas tote bag with a wooden toggle and an embroidered caterpillar motif">
+          <button class="add-btn">Add to bag</button>
+        </div>
+        <div class="specimen__label">
+          <span class="specimen__num">No. 04</span>
+          <h3>The Caterpillar Tote</h3>
+          <p class="latin">Larva verdant</p>
+          <p class="price">$68</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Field guide band -->
+  <section class="field-guide" id="field-guide" data-reveal>
+    <p class="eyebrow">03 — FIELD GUIDE</p>
+    <h2>A small taxonomy of the club.</h2>
+    <img src="images/bugs-decorative.svg" alt="Illustrated field guide of four bugs: ladybug, dragonfly, caterpillar and moth" class="field-guide__image">
+    <p class="field-guide__caption">Four founding members, four totes. More specimens hatching soon.</p>
+  </section>
+
+  <!-- Detail / story -->
+  <section class="details" id="details" data-reveal>
+    <div class="details__image">
+      <img src="images/flatlay-charms.jpg" alt="Flat lay of a canvas tote bag corner styled with ladybug, caterpillar and dragonfly charms on linen">
+    </div>
+    <div class="details__copy">
+      <p class="eyebrow">04 — THE DETAILS</p>
+      <h2>Every charm tells a small story.</h2>
+      <p>
+        Look closely and you'll find the parts that don't show up in a product
+        photo: the enamel pin rattling against the strap, the extra inch of
+        canvas at the base so it never buckles, the wooden toggle that gets
+        smoother with age. We obsess over the details nobody asks for.
+      </p>
+      <ul class="legend">
+        <li><svg width="18" height="18" viewBox="0 0 64 64"><use href="#icon-ladybug"/></svg> Enamel ladybug pin, sold separately</li>
+        <li><svg width="18" height="18" viewBox="0 0 64 64"><use href="#icon-dragonfly"/></svg> Brass dragonfly charm, limited run</li>
+        <li><svg width="18" height="18" viewBox="0 0 64 64"><use href="#icon-caterpillar"/></svg> Hand-stitched caterpillar, one thread at a time</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="join" id="join" data-reveal>
+    <svg class="join__moth" width="120" height="120" viewBox="0 0 64 64" aria-hidden="true"><use href="#icon-moth"/></svg>
+    <p class="eyebrow eyebrow--light">CONSIDER THIS AN INVITATION</p>
+    <h2>Join the club.</h2>
+    <p class="join__lede">
+      Early access to new specimens, 10% off your first tote, and the
+      occasional bug fact you didn't ask for.
+    </p>
+    <form class="join__form" id="join-form">
+      <label for="email" class="sr-only">Email address</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
+      <button type="submit">Join</button>
+    </form>
+    <p class="join__fineprint">No spam. Unsubscribe whenever. We won't tell the other bugs.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__top">
+    <a href="#top" class="wordmark wordmark--footer">
+      <svg width="24" height="24" viewBox="0 0 64 64" class="wordmark__icon"><use href="#icon-dragonfly"/></svg>
+      <span>bug<em>club</em></span>
+    </a>
+    <div class="site-footer__cols">
+      <div>
+        <h4>Shop</h4>
+        <a href="#collection">Ladybug Tote</a>
+        <a href="#collection">Dragonfly Tote</a>
+        <a href="#collection">Firefly Tote</a>
+        <a href="#collection">Caterpillar Tote</a>
+      </div>
+      <div>
+        <h4>Club</h4>
+        <a href="#join">About</a>
+        <a href="#field-guide">Field Guide</a>
+        <a href="#details">Journal</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="#join">Shipping</a>
+        <a href="#join">Returns</a>
+        <a href="#join">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="site-footer__bottom">
+    <p>© 2026 Bug Club. Stitched somewhere with a lot of bugs.</p>
+    <div class="socials">
+      <a href="#top">Instagram</a>
+      <a href="#top">Pinterest</a>
+      <a href="#top">TikTok</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
